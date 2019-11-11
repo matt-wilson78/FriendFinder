@@ -7,9 +7,11 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function (req, res) {
-        var difference = 0;
+        var totalDifference = 0;
         var bestFriend = {
-
+            name: "",
+            photo: "",
+            difference: 1000
         }
     })
 }
