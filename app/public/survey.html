@@ -7,11 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <title>Friend Finder Survey</title>
 </head>
 
 <body>
     <div class="container">
+        <!-- Basic information for survey participant -->
         <h1>Survey Questions</h1>
         <hr>
         <h3><strong>About You:</strong></h3>
@@ -24,10 +36,11 @@
         <hr>
         <br>
 
+        <!-- 10 survey questions to help find the best friend match -->
         <h3><strong>Question 1:</strong></h3>
         <h5>Music is an important part of your life.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question1">
+            <select class="chosen-select w-25" id="question1">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -40,7 +53,7 @@
         <h3><strong>Question 2:</strong></h3>
         <h5>You are a dog person.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question2">
+            <select class="chosen-select w-25" id="question2">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -53,7 +66,7 @@
         <h3><strong>Question 3:</strong></h3>
         <h5>You enjoy being in large crowds.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question3">
+            <select class="chosen-select w-25" id="question3">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -66,7 +79,7 @@
         <h3><strong>Question 4:</strong></h3>
         <h5>You would rather have a long conversation than watch a movie.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question4">
+            <select class="chosen-select w-25" id="question4">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -79,7 +92,7 @@
         <h3><strong>Question 5:</strong></h3>
         <h5>You are comfortable with silence.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question5">
+            <select class="chosen-select w-25" id="question5">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -92,7 +105,7 @@
         <h3><strong>Question 6:</strong></h3>
         <h5>You value alone time.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question6">
+            <select class="chosen-select w-25" id="question6">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -105,7 +118,7 @@
         <h3><strong>Question 7:</strong></h3>
         <h5>You prefer a small get-together over a large party.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question7">
+            <select class="chosen-select w-25" id="question7">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -118,7 +131,7 @@
         <h3><strong>Question 8:</strong></h3>
         <h5>You value honesty over all else.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question8">
+            <select class="chosen-select w-25" id="question8">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -131,7 +144,7 @@
         <h3><strong>Question 9:</strong></h3>
         <h5>You enjoy nature (hikes, mountains, parks, etc.)</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question9">
+            <select class="chosen-select w-25" id="question9">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -144,7 +157,7 @@
         <h3><strong>Question 10:</strong></h3>
         <h5>You enjoy video games.</h5>
         <div class="form-group">
-            <select class="form-control w-25" id="question10">
+            <select class="chosen-select w-25" id="question10">
                 <option>Please Select One</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -155,6 +168,7 @@
         </div>
         <hr>
 
+        <!-- Submit survey button -->
         <button type="button" class="btn btn-lg btn-primary" id="surveySubmit">Submit the Survey!</button>
         <br><br>
 
@@ -168,6 +182,73 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal to display best match -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://via.placeholder.com/400x400"
+                        alt="Placeholder image in case user pic doesn't show" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- This section takes in the information from the survey form using ajax, also verifies that each field has been filled-->
+    <script type="text/javascript">
+        $("#surveySubmit").on("click", function () {
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") isValid = false;
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "Please Select One") isValid = false;
+                });
+                return isValid;
+            }
+            if (validateForm() == true) {
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                };
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", userData, function (data) {
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+                    $("#resultsModal").modal("toggle");
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+            return false;
+        });
+    </script>
 
 </body>
 
