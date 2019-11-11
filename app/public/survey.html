@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Friend Finder Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <h3><strong>About You:</strong></h3>
+        <br>
+        <h4>Name (required)</h4>
+        <input class="form-control" type="text" id="name" required>
+        <h4>Link to photo (required)</h4>
+        <input class="form-control" type="text" id="photo" required>
+        <br>
+        <hr>
+        <br>
+
+        <h3><strong>Question 1:</strong></h3>
+        <h5>Music is an important part of your life.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question1">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 2:</strong></h3>
+        <h5>You are a dog person.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question2">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 3:</strong></h3>
+        <h5>You enjoy being in large crowds.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question3">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 4:</strong></h3>
+        <h5>You would rather have a long conversation than watch a movie.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question4">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 5:</strong></h3>
+        <h5>You are comfortable with silence.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question5">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 6:</strong></h3>
+        <h5>You value alone time.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question6">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 7:</strong></h3>
+        <h5>You prefer a small get-together over a large party.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question7">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 8:</strong></h3>
+        <h5>You value honesty over all else.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question8">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 9:</strong></h3>
+        <h5>You enjoy nature (hikes, mountains, parks, etc.)</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question9">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 10:</strong></h3>
+        <h5>You enjoy video games.</h5>
+        <div class="form-group">
+            <select class="form-control w-25" id="question10">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <hr>
+
+        <button type="button" class="btn btn-lg btn-primary" id="surveySubmit">Submit the Survey!</button>
+        <br><br>
+
+        <div class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a>
+                    |
+                    <a href="https://github.com/matt-wilson78/FriendFinder">Github Repository</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
